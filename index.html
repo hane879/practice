@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b0ae934020.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sanitize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>蒼乃建設</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_wrapper">
+      <a href="#" class="header_logo"><img src="img/header_logo.png" alt="logo"></a>
+      <div class="openbtn1"><span></span><span></span><span></span></div>
+      <nav id="g-nav">
+        <ul class="header-nav_list">
+          <li><a href="#">企業理念</a></li>
+          <li><a href="#">施工事例</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="header_title">街を作る。未来を作る。</h1> 
+  </header>
+
+  <main>
+    <section class="info">
+      <h2 class="main_title">お知らせ</h2>
+      <div class="info_container">
+        <div class="info_content">
+          <a href="#"><span class="info_date">2020.11.17</span><span class="info_item">お知らせ</span>
+          <br><span class="info_text">本社打合せ室が完成しました。</span></a>   
+        </div>
+        <div class="info_content">
+          <a href="#"><span class="info_date">2020.11.10</span><span class="info_item">お知らせ</span>
+          <br><span class="info_text">【メディア掲載】住宅雑誌 2020年11月号</span></a>
+        </div>
+        <div class="info_content">
+          <a href="#"><span class="info_date">2020.11.17</span><span class="info_item">お知らせ</span>
+          <br><span class="info_text">ホームページが完成しました。</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="example">
+      <h2 class="main_title">施工事例</h2>
+      <div class="ex_wrapper">
+        <div class="ex_content">
+          <img src="img/building1.png" alt="M様邸">
+          <h3 class="ex_title">M様邸新築工事</h3>
+          <p class="ex_area">埼玉県</p>
+          <p class="ex_detail"><a href="#">▷詳細を見る</a></p>
+        </div>
+      
+        <div class="ex_content">
+          <img src="img/building2.png" alt="スカイビル">
+          <h3 class="ex_title">スカイビル</h3>
+          <p class="ex_area">東京都</p>
+          <p class="ex_detail"><a href="#">▷詳細を見る</a></p>
+        </div>
+      </div>
+      <p class="ex_list"><a href="#">施工実績一覧</a></p>
+    </section>
+    <section class="link">
+      <div class="link_container">
+        <div class="link_content">
+          <a href="#"><img src="img/company.png" alt="company"></a>
+        </div>
+        <div class="link_content">
+          <a href="#"><img src="img/recruit.png" alt="recruit"></a>
+        </div>
+        <div class="link_content">
+          <a href="#"><img src="img/contact.png" alt="contact"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_wrapper">
+      <a href="#" class="footer_logo"><img src="img/footer_logo.png" alt="logo"></a>
+      <nav>
+        <ul class="footer_list">
+          <li><a href="#">企業理念</a></li>
+          <li><a href="#">施工事例</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p>Copyright © 2020 Aono Corporation.</p>
+  </footer>
+
+<script src="jquery.min.js"></script>  
+  <script>
+    $(".openbtn1").click(function () {//ボタンがクリックされたら
+    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+      $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    });
+    $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+      $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+      $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+    });
+  </script>
+</body>
+</html>
+<!-- <script src="jquery.min.js"></script> -->  
